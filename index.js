@@ -71,7 +71,8 @@ const start = () => {
         return bot.sendMessage(chatId, chatId)
       }
       if (msg.hasOwnProperty("photo") || msg.hasOwnProperty("video") || msg.hasOwnProperty("audio") || msg.hasOwnProperty("video_note") || msg.hasOwnProperty("voice") || msg.hasOwnProperty("document") || msg.hasOwnProperty("sticker")) {
-        return forwardToOffer(chatId, msg)
+        await forwardToOffer(chatId, msg);
+        return bot.sendMessage(chatId, "Ваш мем получен")
       }
       return bot.sendMessage(chatId, "Нет такой команды, я тебя не понимаю.")
     } catch (e) {
