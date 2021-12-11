@@ -61,8 +61,8 @@ const start = () => {
     try {
       if (text === "/start") {
         // await UserModel.create({chatId})
-        await bot.sendMessage(chatId, `${msg.chat.username}, добро пожаловать в телеграм бота канала amoraq`)
-        return menu(chatId, msg)
+        return bot.sendMessage(chatId, `Меню`, menuOptions)
+        // return menu(chatId, msg)
       }
       if (text === "/info") {
         return bot.sendMessage(chatId, `${msg.chat.username}, я пока ничего не умею :(`)
