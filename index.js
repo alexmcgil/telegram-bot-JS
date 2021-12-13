@@ -80,47 +80,6 @@ const start = () => {
     }
   })
 
-  //   {
-  //   message_id: 246,
-  //   from: {
-  //     id: 318582941,
-  //     is_bot: false,
-  //     first_name: 'alexmcgil',
-  //     username: 'alexmcgil',
-  //     language_code: 'ru'
-  //   },
-  //   chat: {
-  //     id: 318582941,
-  //     first_name: 'alexmcgil',
-  //     username: 'alexmcgil',
-  //     type: 'private'
-  //   },
-  //   date: 1639236658,
-  //   photo: [
-  //     {
-  //       file_id: 'AgACAgIAAxkBAAP2YbTEMod3VliGT7YGMOcWK8dByqoAAvK6MRs3maBJsw1xPVXleM4BAAMCAANzAAMjBA',
-  //       file_unique_id: 'AQAD8roxGzeZoEl4',
-  //       file_size: 2841,
-  //       width: 90,
-  //       height: 90
-  //     },
-  //     {
-  //       file_id: 'AgACAgIAAxkBAAP2YbTEMod3VliGT7YGMOcWK8dByqoAAvK6MRs3maBJsw1xPVXleM4BAAMCAANtAAMjBA',
-  //       file_unique_id: 'AQAD8roxGzeZoEly',
-  //       file_size: 48727,
-  //       width: 320,
-  //       height: 320
-  //     },
-  //     {
-  //       file_id: 'AgACAgIAAxkBAAP2YbTEMod3VliGT7YGMOcWK8dByqoAAvK6MRs3maBJsw1xPVXleM4BAAMCAAN4AAMjBA',
-  //       file_unique_id: 'AQAD8roxGzeZoEl9',
-  //       file_size: 128222,
-  //       width: 720,
-  //       height: 720
-  //     }
-  //   ]
-  // }
-
   bot.on("callback_query", async msg => {
     // const msg = callbackQuery.message;
     const data = msg.data;
